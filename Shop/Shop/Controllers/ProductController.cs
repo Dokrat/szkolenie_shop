@@ -11,7 +11,7 @@ namespace Shop.Controllers
     {
         static List<Product> _products = new List<Product>{
             new Product {id = 1, Name = "Myszka", Description = "<b>Opis</b> myszki", Price = 500},
-            new Product {id = 2, Name = "Klawiatura", Description = "Opis klawiatury", Price = 800},
+            new Product {id = 2, Name = "Klawiatura", Description = "Opis klawiaturyyy", Price = 800},
             new Product {id = 3, Name = "Sluchawki", Description = "Opis słuchawek", Price = 300},
             new Product {id = 4, Name = "Monitor", Description = "Opis monitora", Price = 900}
 
