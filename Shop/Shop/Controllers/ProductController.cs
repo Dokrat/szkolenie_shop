@@ -25,6 +25,12 @@ namespace Shop.Controllers
             return View(model);
         }
 
+        public ActionResult cheepestProduct()
+        {
+            var model = _products.FirstOrDefault(p => p.Price == _products.Min(pr => pr.Price ));
+            return PartialView("_Product", model);
+        }
+
         //
         // GET: /Product/Details/5
         public ActionResult Details(int id)

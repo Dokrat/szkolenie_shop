@@ -1,0 +1,13 @@
+﻿@model Shop.Models.Product>
+
+<div class="product">
+    <h2>
+        @Model.Name
+    </h2>
+    <p>@Html.Raw(Model.Description)</p>
+    <div class="price red">@Model.Price</div>
+    <p>@Html.ActionLink("edytuj", "Edit",new {id = Model.id})</p>
+</div>
+
+
+

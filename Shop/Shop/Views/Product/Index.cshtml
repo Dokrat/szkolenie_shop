@@ -14,12 +14,5 @@
 
 @foreach(var product in Model)
 {
-    <div class="product">
-        <h2>
-            @product.Name
-        </h2>
-        <p>@Html.Raw(product.Description)</p>
-        <div class="price red">@product.Price</div>
-        <p>@Html.ActionLink("edytuj", "Edit",new {id = product.id})</p>
-    </div>
+    @Html.Partial("_Product", product)
 }
